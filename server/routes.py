@@ -7,16 +7,7 @@ CORS(app)
 
 @app.route("/api", methods=["GET"])
 def get_api_index():
-    response_obj = {"message": "Hello, what is your name?"}
-    return json_response(response_obj)
-
-
-@app.route("/api", methods=["POST"])
-def post_api_index():
-    data = request.get_json()
-    name = data["name"]
-
-    response_obj = {"message": "Hello " + name}
+    response_obj = {"message": "Hello Client!"}
     return json_response(response_obj)
 
 
