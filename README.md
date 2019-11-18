@@ -4,7 +4,7 @@
 
 ```
 pipenv install
-cd app/http/web/client
+cd client
 npm i
 ```
 
@@ -17,13 +17,13 @@ pipenv shell
 Then
 
 ```
-FLASK_APP=$PWD/app/http/api/routes.py FLASK_ENV=development pipenv run python -m flask run --port 4433
+FLASK_APP=$PWD/server/routes.py FLASK_ENV=development pipenv run python -m flask run --port 4433
 ```
 
 or
 
 ```
-FLASK_APP=app/http/api/routes.py FLASK_ENV=development pipenv run python3 -m flask run --port 4433
+FLASK_APP=server/routes.py FLASK_ENV=development pipenv run python3 -m flask run --port 4433
 ```
 
 ## Exit pipenv
@@ -37,7 +37,7 @@ exit
 From here,
 
 ```
-cd app/http/web/client
+cd client
 serve -s build # runs on port 5000
 ```
 
